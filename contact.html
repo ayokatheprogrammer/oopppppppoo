@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+</head>
+<body>
+    <div class="complain">
+        <div>
+            <header>
+                <div class="Logo">
+                   <h3>oluwagbotemi beatuty palace</h3>
+                </div>
+                <div class="phone">
+                    <a>Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">contact</a>
+                   
+                </div>
+                <div>
+                    <div class="postman">
+                       <h3>08124500759</h3>
+                       <button>book  .appiontment</button>
+                    </div>
+                    <div class="menu" onclick="openNav()">
+                    &#9776
+                    </div>
+                </div>
+               
+            </header>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)"class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./index.html">Home</a>
+                
+                <a href="./about.html">About</a>
+                <a href="contact.html">contact</a>
+                <a>08124500759</a>
+                
+            
+
+            </div>
+           <div class="do">
+            <form>
+                <p>
+                <label>email</label>
+            <input type="text"/>
+             </p>
+             <p>
+                <label>name</label>
+                <input type="text"/>
+             </p>
+             <p>
+                <label>phone number</label>
+                <input type="text"/>
+             </p>
+            </form>
+           </div>
+            <div>
+                <footer>design by zeenat</footer>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

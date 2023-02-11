@@ -1,0 +1,239 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: Helvetica;
+}
+header {
+  height: 80px;
+  width: 100vw;
+  background-color: #123456;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 100px;
+  padding: 20px;
+}
+.phone {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+}
+.phone a {
+  text-decoration: none;
+  color: white;
+}
+.postman {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.posman h3 {
+  font-size: 12px;
+}
+.postman button {
+  height: 40px;
+  width: 120px;
+}
+.menu {
+  display: none;
+}
+.menu div {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+.Elsa {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.Anna {
+  width: 80vw;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.text {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text button {
+  width: 50%;
+  height: 50px;
+  background-color: #123456;
+  color: white;
+  border-radius: 5px;
+}
+footer {
+  height: 100px;
+  width: 100vw;
+  background-color: #123456;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #123456;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.about {
+  display: flex;
+  height: 500px;
+}
+.do {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+form {
+  height: 300px;
+  width: 400px;
+  background-color: #123456;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  height: 30px;
+  width: 200px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .do {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  form {
+    height: 250px;
+    width: 400px;
+    background-color: #123456;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    height: 30px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .phone {
+    display: none;
+  }
+  .postman {
+    display: none;
+  }
+  .menu {
+    display: block;
+    padding-right: 20px;
+  }
+  .Anna {
+    width: 80vw;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .image {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .text {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
